@@ -1,0 +1,361 @@
+{
+    "designDayRate": 450,
+    "developerDayRate": 450,
+    "projectManagerDayRate": 100,
+    "projectManagerDaysRateVisible": false,
+    "canShowRate": true,
+    "appSizes": [
+      {
+        "name": "Small",
+        "days": 10,
+        "checked": false,
+        "canShowDays": true
+      },
+      {
+        "name": "Medium",
+        "days": 30,
+        "checked": false,
+        "canShowDays": true
+      },
+      {
+        "name": "Large",
+        "days": 50,
+        "checked": false,
+        "canShowDays": true
+      }
+    ],
+    "appDetails": [
+      {
+        "name": "MVP",
+        "days": 30,
+        "checked": false,
+        "canShowDays": true
+      },
+      {
+        "name": "Basic",
+        "days": 50,
+        "checked": false,
+        "canShowDays": true
+      },
+      {
+        "name": "Polished",
+        "days": 70,
+        "checked": false,
+        "canShowDays": true
+      }
+    ],
+    "usersAndAccounts": [
+      {
+        "name": "Email / Password Sign Up",
+        "days": 1,
+        "checked": false,
+        "canShowDays": true
+      },
+      {
+        "name": "Facebook Sign Up",
+        "days": 2,
+        "checked": false,
+        "canShowDays": true
+      },
+      {
+        "name": "Twitter Sign Up",
+        "days": 2,
+        "checked": false,
+        "canShowDays": true
+      },
+      {
+        "name": "Google Sign Up",
+        "days": 2,
+        "checked": false,
+        "canShowDays": true
+      },
+      {
+        "name": "LinkedIn Sign Up",
+        "days": 2,
+        "checked": false,
+        "canShowDays": true
+      },
+      {
+        "name": "Github Sign Up",
+        "days": 2,
+        "checked": false,
+        "canShowDays": true
+      },
+      {
+        "name": "User Invitation Emails",
+        "days": 2,
+        "checked": false,
+        "canShowDays": true
+      },
+      {
+        "name": "Multi-tenant Accounts",
+        "days": 3,
+        "checked": false,
+        "canShowDays": true
+      },
+      {
+        "name": "Subdomains",
+        "days": 4,
+        "checked": false,
+        "canShowDays": true
+      },
+      {
+        "name": "Custom Domains",
+        "days": 4,
+        "checked": false,
+        "canShowDays": true
+      }
+    ],
+    "contents": [
+      {
+        "name": "Dashboard",
+        "days": 5,
+        "checked": false,
+        "canShowDays": true
+      },
+      {
+        "name": "Activity Feed",
+        "days": 4,
+        "checked": false,
+        "canShowDays": true
+      },
+      {
+        "name": "File Uploading",
+        "days": 4,
+        "checked": false,
+        "canShowDays": true
+      },
+      {
+        "name": "User Profiles",
+        "days": 2,
+        "checked": false,
+        "canShowDays": true
+      },
+      {
+        "name": "Transactional Emails",
+        "days": 2,
+        "checked": false,
+        "canShowDays": true
+      },
+      {
+        "name": "Tags",
+        "days": 2,
+        "checked": false,
+        "canShowDays": true
+      },
+      {
+        "name": "Ratings or reviews",
+        "days": 5,
+        "checked": false,
+        "canShowDays": true
+      },
+      {
+        "name": "Audio/Video processing",
+        "days": 5,
+        "checked": false,
+        "canShowDays": true
+      },
+      {
+        "name": "Free text searching",
+        "days": 5,
+        "checked": false,
+        "canShowDays": true
+      }
+    ],
+    "datesAndLocations": [
+      {
+        "name": "Calendaring",
+        "days": 7,
+        "checked": false,
+        "canShowDays": true
+      },
+      {
+        "name": "Display of Map data / Geolocation",
+        "days": 3,
+        "checked": false,
+        "canShowDays": true
+      },
+      {
+        "name": "Display of custom map markers/regions",
+        "days": 3,
+        "checked": false,
+        "canShowDays": true
+      },
+      {
+        "name": "Bookings",
+        "days": 8,
+        "checked": false,
+        "canShowDays": true
+      }
+    ],
+    "socialAndEngagements": [
+      {
+        "name": "Messaging",
+        "days": 6,
+        "checked": false,
+        "canShowDays": true
+      },
+      {
+        "name": "Forums or commenting",
+        "days": 5,
+        "checked": false,
+        "canShowDays": true
+      },
+      {
+        "name": "Social Sharing",
+        "days": 2,
+        "checked": false,
+        "canShowDays": true
+      },
+      {
+        "name": "Push to Facebook Open Graph",
+        "days": 5,
+        "checked": false,
+        "canShowDays": true
+      }
+    ],
+    "billingAndECommerceServices": [
+      {
+        "name": "Subscription plans",
+        "days": 8,
+        "checked": false,
+        "canShowDays": true
+      },
+      {
+        "name": "Payment processing",
+        "days": 5,
+        "checked": false,
+        "canShowDays": true
+      },
+      {
+        "name": "Shopping Cart",
+        "days": 8,
+        "checked": false,
+        "canShowDays": true
+      },
+      {
+        "name": "User Marketplace",
+        "days": 12,
+        "checked": false,
+        "canShowDays": true
+      },
+      {
+        "name": "Product Management",
+        "days": 4,
+        "checked": false,
+        "canShowDays": true
+      }
+    ],
+    "analytics": [
+      {
+        "name": "CMS Integration",
+        "days": 7,
+        "checked": false,
+        "canShowDays": true
+      },
+      {
+        "name": "User Admin pages",
+        "days": 3,
+        "checked": false,
+        "canShowDays": true
+      },
+      {
+        "name": "Moderation / Content Approval",
+        "days": 4,
+        "checked": false,
+        "canShowDays": true
+      },
+      {
+        "name": "Intercom",
+        "days": 3,
+        "checked": false,
+        "canShowDays": true
+      },
+      {
+        "name": "Usage analytics",
+        "days": 3,
+        "checked": false,
+        "canShowDays": true
+      },
+      {
+        "name": "Crash Reporting",
+        "days": 0,
+        "checked": false,
+        "canShowDays": true
+      },
+      {
+        "name": "Performance Monitoring",
+        "days": 1,
+        "checked": false,
+        "canShowDays": true
+      },
+      {
+        "name": "Multilingual Support",
+        "days": 4,
+        "checked": false,
+        "canShowDays": true
+      }
+    ],
+    "integrations": [
+      {
+        "name": "Connect to one or more third party services",
+        "days": 6,
+        "checked": false,
+        "canShowDays": true
+      },
+      {
+        "name": "An API for others to integrate with your app",
+        "days": 8,
+        "checked": false,
+        "canShowDays": true
+      },
+      {
+        "name": "SMS Messaging",
+        "days": 4,
+        "checked": false,
+        "canShowDays": true
+      },
+      {
+        "name": "Phone Number Masking",
+        "days": 4,
+        "checked": false,
+        "canShowDays": true
+      }
+    ],
+    "protections": [
+      {
+        "name": "SSL Certificate based Security",
+        "days": 3,
+        "checked": false,
+        "canShowDays": true
+      },
+      {
+        "name": "DoS protection",
+        "days": 5,
+        "checked": false,
+        "canShowDays": true
+      },
+      {
+        "name": "Two Factor Authentication",
+        "days": 5,
+        "checked": false,
+        "canShowDays": true
+      }
+    ],
+    "specificDevelopments": [
+      {
+        "id": "appSpecific",
+        "name": "App Specific Development",
+        "days": 0,
+        "checked": false,
+        "canShowDays": true
+      },
+      {
+        "id": "projectManager",
+        "name": "Project Manager",
+        "days": 0,
+        "checked": false,
+        "canShowDays": true
+      }
+    ]
+  }
