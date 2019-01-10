@@ -1,2 +1,2 @@
-# estimateapp
+# Estimate App
 VueJS web app to estimate to the cost of a app development
