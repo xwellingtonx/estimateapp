@@ -19,17 +19,19 @@
         </div>
       </div>
     </div>
-    <router-view/>
+    <home></home>
   </div>
 </template>
 
 <script>
 import Navbar from '@/components/Navbar'
+import Home from './components/Home.vue'
 
 export default {
-  name: 'app',
+  name: 'App',
   components: {
-    Navbar
+    Navbar,
+    Home
   },
   methods: {
     showCalculations: function (event) {

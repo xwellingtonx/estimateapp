@@ -1,13 +1,15 @@
 <template>
   <div class="container">
     <div class="row app-type ">
-      <div class="app-type-item col-md-4 col-sm-4 col-xs-4" v-for="tab in tabs" :class="[tab.iconColor + '-box' , {'item-selected': tab.isActive}]" @click="tabShow(tab)">
+      <div class="app-type-item col-md-4 col-sm-4 col-xs-4" v-for="tab in tabs" :key="tab.id"
+        :class="[tab.iconColor + '-box' , {'item-selected': tab.isActive}]" 
+        @click="tabShow(tab)">
         <label class="platform-icon" :class="tab.icon"></label> 
         <p><span>{{tab.name}}</span></p>
       </div>
     </div>
 
-    <tab-item v-for="tab in tabs" :key="tab.id" :tab="tab" v-if="tab.isActive"></tab-item >  
+    <tab-item v-for="tab in tabs" :key="tab.id" :tab="tab"></tab-item >  
 
     <div class="painel-feature">
       <div class="feature-icon">
@@ -16,7 +18,7 @@
       <div class="painel-feature-content text-center">
         <div class="feature-row" style="margin-top: 15px;">
           <div class="row">
-            <div class="col-md-4 col-sm-4" v-for="tab in tabs">
+            <div class="col-md-4 col-sm-4" v-for="(tab, index) in tabs" :key="'feature_' + index">
               <label class="platform-icon" :class="[tab.iconColor, tab.icon]"></label> 
               <h4>{{tab.designerDays}} Designer Days ({{calculeWeeks(tab.designerDays)}} Weeks)</h4>
               <h4>{{tab.developerDays}} Developer Days ({{calculeWeeks(tab.developerDays)}} Weeks)</h4>
@@ -193,7 +195,7 @@ export default {
   },
   watch: {
     'tabs': {
-      handler: function (val, oldVal) {
+      handler: function () {
         this.projectCost = this.tabs.reduce((a, b) => a + b.totalCost, 0)
       },
       deep: true

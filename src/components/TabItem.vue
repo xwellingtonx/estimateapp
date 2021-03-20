@@ -1,5 +1,5 @@
 <template>
-    <div class="tab-content">
+    <div class="tab-content" v-if="tab.isActive">
       <div class="painel-feature">
         <div class="feature-icon">
           <label>1°</label>
@@ -10,7 +10,7 @@
             <span v-bind:class="{ 'days-hidden': !tab.features.canShowDays}">Base Days</span>
             <table>
               <tbody>
-                <tr v-for="(item, index) in tab.features.appSizes">
+                <tr v-for="(item, index) in tab.features.appSizes" :key="'appSize_' + index">
                   <td>
                     <label class="control control-checkbox">{{item.name}}
                       <input type="checkbox" v-model="item.checked"  v-on:change="radioOnChange(item, tab.features.appSizes)"/>
@@ -40,7 +40,7 @@
             <span v-bind:class="{ 'days-hidden': !tab.features.canShowDays }">Percentage</span>
             <table>
               <tbody>
-                <tr v-for="(item, index) in tab.features.appDetails">
+                <tr v-for="(item, index) in tab.features.appDetails" :key="'ui_' + index">
                   <td>
                     <label class="control control-checkbox">{{item.name}}
                       <input type="checkbox" v-model="item.checked"  v-on:change="radioOnChange(item, tab.features.appDetails)"/>
@@ -70,7 +70,7 @@
             <span v-bind:class="{ 'days-hidden': !tab.features.canShowDays }">Days</span>
             <table>
               <tbody>
-                <tr v-for="(item, index) in tab.features.usersAndAccounts">
+                <tr v-for="(item, index) in tab.features.usersAndAccounts" :key="'userAccounts_' + index">
                   <td>
                     <label class="control control-checkbox">{{item.name}}
                       <input type="checkbox" v-model="item.checked"  v-on:change="checkboxOnChange(item)"/>
@@ -99,7 +99,7 @@
             <span v-bind:class="{ 'days-hidden': !tab.features.canShowDays }">Days</span>
             <table>
               <tbody>
-                <tr v-for="(item, index) in tab.features.contents">
+                <tr v-for="(item, index) in tab.features.contents" :key="'contents_' + index">
                   <td>
                     <label class="control control-checkbox">{{item.name}}
                       <input type="checkbox" v-model="item.checked"  v-on:change="checkboxOnChange(item)"/>
@@ -128,7 +128,7 @@
             <span v-bind:class="{ 'days-hidden': !tab.features.canShowDays }">Days</span>
             <table>
               <tbody>
-                <tr v-for="(item, index) in tab.features.datesAndLocations">
+                <tr v-for="(item, index) in tab.features.datesAndLocations" :key="'datesLocations_' + index">
                   <td>
                     <label class="control control-checkbox">{{item.name}}
                       <input type="checkbox" v-model="item.checked"  v-on:change="checkboxOnChange(item)"/>
@@ -157,7 +157,7 @@
             <span v-bind:class="{ 'days-hidden': !tab.features.canShowDays }">Days</span>
             <table>
               <tbody>
-                <tr v-for="(item, index) in tab.features.socialAndEngagements">
+                <tr v-for="(item, index) in tab.features.socialAndEngagements" :key="'engagements_' + index">
                   <td>
                     <label class="control control-checkbox">{{item.name}}
                       <input type="checkbox" v-model="item.checked"  v-on:change="checkboxOnChange(item)"/>
@@ -186,7 +186,7 @@
             <span v-bind:class="{ 'days-hidden': !tab.features.canShowDays }">Days</span>
             <table>
               <tbody>
-                <tr v-for="(item, index) in tab.features.billingAndECommerceServices">
+                <tr v-for="(item, index) in tab.features.billingAndECommerceServices" :key="'billing_' + index">
                   <td>
                     <label class="control control-checkbox">{{item.name}}
                       <input type="checkbox" v-model="item.checked"  v-on:change="checkboxOnChange(item)"/>
@@ -215,7 +215,7 @@
             <span v-bind:class="{ 'days-hidden': !tab.features.canShowDays }">Days</span>
             <table>
               <tbody>
-                <tr v-for="(item, index) in tab.features.analytics">
+                <tr v-for="(item, index) in tab.features.analytics" :key="'analytics_' + index">
                   <td>
                     <label class="control control-checkbox">{{item.name}}
                       <input type="checkbox" v-model="item.checked"  v-on:change="checkboxOnChange(item)"/>
@@ -244,7 +244,7 @@
             <span v-bind:class="{ 'days-hidden': !tab.features.canShowDays }">Days</span>
             <table>
               <tbody>
-                <tr v-for="(item, index) in tab.features.integrations">
+                <tr v-for="(item, index) in tab.features.integrations" :key="'integrations_' + index">
                   <td>
                     <label class="control control-checkbox">{{item.name}}
                       <input type="checkbox" v-model="item.checked"  v-on:change="checkboxOnChange(item)"/>
@@ -273,7 +273,7 @@
             <span v-bind:class="{ 'days-hidden': !tab.features.canShowDays }">Days</span>
             <table>
               <tbody>
-                <tr v-for="(item, index) in tab.features.protections">
+                <tr v-for="(item, index) in tab.features.protections" :key="'protections_' + index">
                   <td>
                     <label class="control control-checkbox">{{item.name}}
                       <input type="checkbox" v-model="item.checked"  v-on:change="checkboxOnChange(item)"/>
@@ -302,7 +302,7 @@
             <span v-bind:class="{ 'days-hidden': !tab.features.canShowDays }">Days</span>
             <table>
               <tbody>
-                <tr v-for="(item, index) in tab.features.specificDevelopments">
+                <tr v-for="(item, index) in tab.features.specificDevelopments" :key="'developments_' + index">
                   <td>
                     <label class="control control-checkbox">{{item.name}}
                       <input type="checkbox" v-model="item.checked"  v-on:change="checkboxOnChange(item)"/>
