@@ -1,4 +1,5 @@
 <template>
+    <!-- eslint-disable -->
     <div class="tab-content" v-if="tab.isActive">
       <div class="painel-feature">
         <div class="feature-icon">
@@ -548,7 +549,9 @@
 </style>
 
 <script>
+/* eslint-disable */
 export default {
+  name: "TabItem",
   data () {
     return {
       selectedFeatures: [],

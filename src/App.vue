@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import Navbar from '@/components/Navbar'
+import Navbar from './components/Navbar.vue'
 import Home from './components/Home.vue'
 
 export default {
@@ -53,7 +53,7 @@ export default {
 
 body {
   font-family: 'Lato', sans-serif;
-  background: #f5f5f5;
+  background: #f5f5f5 !important;
   font-size: 14px;
   margin: 0px;
 }

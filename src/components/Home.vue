@@ -146,6 +146,7 @@ import TabItem from '@/components/TabItem'
 import AppFeature from '@/AppFeature.json'
 
 export default {
+  name: "HomeComponent",
   components: {
     TabItem
   },

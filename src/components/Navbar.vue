@@ -9,13 +9,13 @@
 
             </div>
 
-            <div class="navbar-collapse" v-bind:class="{ collapse: !collapseIsActive}" id="navbar">
+            <!-- <div class="navbar-collapse" v-bind:class="{ collapse: !collapseIsActive}" id="navbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#">Menu1</a></li>
                     <li><a href="#">Menu2</a></li>
                     <li><a href="#">Menu3</a></li>
                 </ul>
-            </div>
+            </div> -->
           </div>
       </div>
   </nav>
@@ -23,6 +23,7 @@
 
 <script>
 export default {
+  name: "NavbarComponent",
   data () {
     return {
       collapseIsActive: false
