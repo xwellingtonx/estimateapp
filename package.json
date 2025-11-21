@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "deploy": "vite build --base=/my-vue-app/",
+    "deploy": "vite build --base=/estimateapp/",
     "preview": "vite preview"
   },
   "dependencies": {
