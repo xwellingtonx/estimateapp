@@ -9,7 +9,7 @@
       </div>
     </div>
 
-    <tab-item v-for="tab in tabs" :key="tab.id" :tab="tab"></tab-item >  
+    <TabItem v-for="tab in tabs" :key="tab.id" :tab="tab"></TabItem>  
 
     <div class="painel-feature">
       <div class="feature-icon">
@@ -33,7 +33,6 @@
   </div>
 </template>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 h4, .h4 {
   font-size: 1.1em;
@@ -142,8 +141,8 @@ h4, .h4 {
 </style>
 
 <script>
-import TabItem from '@/components/TabItem'
-import AppFeature from '@/AppFeature.json'
+import TabItem from './TabItem.vue'
+import AppFeature from '../AppFeature.json'
 
 export default {
   name: "HomeComponent",

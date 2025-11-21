@@ -2,7 +2,7 @@
   <div id="app">
     <div class="header">
       <div class="container">
-        <navbar></navbar>
+        <Navbar></Navbar>
         <div class="header-content">
           <div class="brand">
             <img src="./assets/icons/coins.png" />
@@ -19,13 +19,13 @@
         </div>
       </div>
     </div>
-    <home></home>
+    <Home></Home>
   </div>
 </template>
 
 <script>
-import Navbar from './components/Navbar.vue'
-import Home from './components/Home.vue'
+import Home from './components/Home.vue';
+import Navbar from './components/Navbar.vue';
 
 export default {
   name: 'App',
@@ -87,7 +87,7 @@ body {
   display:inline-block;
   display:-moz-inline-stack;
   zoom:1;
-  *display:inline;
+  display:inline;
   font-size: 3.6em;
   font-weight: 700;
   color: #000;
@@ -109,7 +109,7 @@ body {
   display:inline-block;
   display:-moz-inline-stack;
   zoom:1;
-  *display:inline;
+  display:inline;
 }
 
 /*Switch*/
@@ -190,7 +190,6 @@ body {
 
   .brand h1 {
     display: block;
-    *display: block;
     font-size: 2.4em;
   }
   .brand img {

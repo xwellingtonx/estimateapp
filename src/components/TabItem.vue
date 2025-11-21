@@ -1,5 +1,4 @@
 <template>
-    <!-- eslint-disable -->
     <div class="tab-content" v-if="tab.isActive">
       <div class="painel-feature">
         <div class="feature-icon">
